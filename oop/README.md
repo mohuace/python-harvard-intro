@@ -1,0 +1,1 @@
+A Class in python is a blueprint for creating objects. It defines a set of attributes and methods that the created objects will have. Classes are a fundamental part of object-oriented programming in Python.

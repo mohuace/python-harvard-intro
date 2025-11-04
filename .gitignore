@@ -1,0 +1,97 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+venv.bak/
+
+# Pyenv
+.python-version
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+*.swp
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Environments
+.env
+.env.*
+
+# pip/pwheel
+pip-wheel-metadata/
+
+# Mypy
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Misc
+*.log
+*.tmp
+.idea/
+
+# Local python virtualenvs often created by tools
+.env/
+
+# Ignore compiled distributions
+*.egg-info/
+*.egg
+
+# Node/npm artifacts (if present)
+node_modules/
+
+# Editor backups
+*~
+
+# macOS
+.DS_Store
+
+# coverage
+.coverage
+coverage.xml
+
+# build output
+build/
+
+# wheel
+*.whl
