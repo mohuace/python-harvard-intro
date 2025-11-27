@@ -8,11 +8,6 @@ class Student:
     # Because in those languages, constructor is responsible for creating the object.
     # In Python, object creation is handled by __new__ method internally that is already called before __init__. We don't usually override it.
     def __init__(self, name, house):
-        if not name:
-            raise ValueError("Missing name")
-        if not house:
-            raise ValueError("Missing house")
-
         # These two assignments will also call setter methods defined below automatically.
         # This are NOT creating new attributes name and house in the instance.
         # Instead they are calling the setter methods defined below.
@@ -21,6 +16,7 @@ class Student:
     
     # This is exactly like toString() method in Java.
     def __str__(self):
+        # These will call getters
         return f"{self.name} from {self.house}"
     
     # Getter for name
@@ -75,6 +71,14 @@ def main():
 
     # This won't work as we have validation in setter method of house property
     #student.house = "Corrupted House"
+
+    #Even after using setter, we can still access the attributes directly
+    # student._name = "Directly Modified Name"
+    # student._house = "Directly Modified House"
+    # Python (unlike java) does not have true private attributes or any notion
+    # of private, protected or public attributes.
+    # But by python convention, if we define attributes with leading underscore,
+    # we should treat them as private and not access them directly from outside the class.
 
     print(student)
 
