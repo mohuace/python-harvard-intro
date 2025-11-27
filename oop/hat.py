@@ -16,5 +16,9 @@ class Hat:
         print(name, "is in", random.choice(cls.houses))
 
 # Accessing the class method directly.
-Hat.sort("Harry")
+def main():
+    Hat.sort("Harry")
+
+if __name__ == "__main__":
+    main()
  
