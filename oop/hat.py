@@ -13,6 +13,12 @@ class Hat:
     # to keep one method that can be accessed without creating instances
     @classmethod
     def sort(cls, name):
+        # Using cls.houses means, you are using the class 
+        # that this method is called on. In main(), 
+        # Hat class is used to call sort method.
+        # We can directly use Hat.houses as well.
+        # This is important when there is inheritance involved.
+        # Hence use cls.houses
         print(name, "is in", random.choice(cls.houses))
 
 # Accessing the class method directly.
